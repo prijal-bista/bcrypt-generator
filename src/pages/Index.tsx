@@ -15,7 +15,7 @@ const Index = () => {
         <header className="flex flex-col items-center mb-12 relative">
           <div className="absolute top-4 left-4 md:top-8 md:left-8">
             <a
-              href="https://github.com/prijal-bista/jwt-explorer"
+              href="https://github.com/prijal-bista/bcrypt-generator"
               target="_blank"
               rel="noopener noreferrer"
               className="fixed top-4 left-4 z-50"
