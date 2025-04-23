@@ -1,0 +1,80 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme - using provided light colors */
+    --background: 0 0% 98%; /* #fafafa */
+    --foreground: 220 3% 31%; /* #4f4f4f */
+
+    --card: 0 0% 92%; /* #eceaea */
+    --card-foreground: 0 0% 0%; /* #000000 */
+
+    --popover: 0 0% 92%; /* #eceaea */
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 180 50% 20%; /* Dark green from #183d3d */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 91%; /* #ebe8e8 */
+    --secondary-foreground: 220 2% 31%;
+
+    --muted: 0 0% 81%; /* #cfcfcf */
+    --muted-foreground: 220 2% 31%; /* #524f4f */
+
+    --accent: 0 0% 91%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 3% 76%;
+    --input: 220 3% 76%;
+    --ring: 180 50% 20%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme - using provided dark colors */
+    --background: 201 67% 5%; /* #040d12 */
+    --foreground: 0 0% 100%; /* #ffffff */
+
+    --card: 180 43% 17%; /* #183d3d */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 180 43% 17%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 180 50% 20%; /* Dark green from #183d3d */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 157 15% 64%; /* #93b1a6 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 180 43% 17%;
+    --muted-foreground: 157 15% 64%;
+
+    --accent: 180 50% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 180 43% 17%;
+    --input: 180 43% 17%;
+    --ring: 180 50% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
