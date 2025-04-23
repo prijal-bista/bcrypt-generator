@@ -43,8 +43,7 @@ const Index = () => {
           </div>
 
           <p className="text-slate-600 dark:text-slate-300 max-w-lg mx-auto text-center mt-4">
-            A modern, secure browser based tool to generate and verify password
-            hashes
+            A secure browser based tool to generate and verify password hashes
           </p>
         </header>
 
